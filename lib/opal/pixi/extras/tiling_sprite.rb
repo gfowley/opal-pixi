@@ -9,9 +9,9 @@ module PIXI::Extras
       super(`new PIXI.extras.TilingSprite(#{texture.to_n},#{width},#{height})`)
     end
 
-    alias_native :tile_scale, :tileScale, as: Point
+    alias_native :tile_scale, :tileScale, as: PIXI::Point
     alias_native :tile_scale=, :tileScale=
-    alias_native :tile_position, :tilePosition, as: Point
+    alias_native :tile_position, :tilePosition, as: PIXI::Point
     alias_native :tile_position=, :tilePosition=
 
   end
